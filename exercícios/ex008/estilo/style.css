@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    background-color: lightcyan;
+    border: 2px solid black;
+    width: 500px;
+    height: 400px;
+    margin: 0 auto;
+    color: black;
+}
+.item{
+    background-color: lightcoral;
+    width: 200px;
+    height: 70px;
+    display: flex;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+}
+.item:nth-child(even){
+    background-color: lightblue;
+}
+.item:nth-child(1){
+    flex-shrink: 2;
+}
+.item:nth-child(2){
+    flex-shrink: 3;
+}
