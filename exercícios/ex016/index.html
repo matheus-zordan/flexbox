@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura básica</title>
+    <style type="text/css" media="screen">
+        *{
+            padding: 0;
+            margin: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            color: black;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .wrapper > *{
+            padding: 2.5rem;
+        }
+        header,footer{
+            background-color: lightskyblue;
+        }
+        .nav{
+            background-color: royalblue;
+            order: 1;
+        }
+        article{
+            background-color: tomato;
+        }
+        .banner{
+            background-color: seagreen;
+            order: 1;
+        }
+        footer{
+            order: 1;
+        }
+        @media screen and (min-width:1024px) {
+            .wrapper{
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            .nav,.banner{
+                order: 0;
+                flex: 1 0 20%;
+            }
+            article{
+                flex: 1 0 60%;
+            }
+            header,footer{
+                flex: 1 0 100%;
+            }
+            .cabe{
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                font-size: 25px;
+                color: black;
+            }
+            .roda{
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                justify-content: center;
+                font-size: 25px;
+                color: black;
+            }
+
+        }        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <p class ="cabe">Área de cabeçalho</p>    
+        </header>
+        <aside class="nav">
+            categorias,posts recentes, entre outro
+        </aside>
+        <article class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio nihil nam repudiandae rerum! Reiciendis error facere reprehenderit nemo, temporibus necessitatibus repellendus voluptatem iusto mollitia molestiae sapiente, incidunt omnis perferendis optio.
+            Veritatis natus eum optio deleniti quas in laudantium dolore beatae cupiditate. Fugit laudantium et minima assumenda, molestias velit alias, error, neque unde cupiditate distinctio repellat numquam mollitia similique dolorum praesentium?
+            Ipsum velit suscipit porro mollitia, quibusdam facere, error voluptas nulla, cum dicta quaerat. Provident, dolorem unde. Neque odio eveniet accusantium molestias quis exercitationem assumenda dignissimos nesciunt, nihil totam! Hic, eaque!
+            Repellat modi ea provident quam explicabo molestias deserunt eaque, nobis illum officia id libero, ut, excepturi veritatis at optio unde enim in ratione neque totam repellendus porro? Earum, libero sed.
+            Eveniet, repellendus itaque alias totam veritatis accusantium labore harum debitis saepe dolorem odit cumque voluptatum maxime expedita assumenda eaque provident iusto fuga aliquam similique, exercitationem ab! Temporibus aliquam magni aut.
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo in nam ipsam accusamus eius culpa, enim maxime debitis. Magnam debitis quos dolorem. Rem, dignissimos veritatis dolores excepturi quia saepe maiores.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere perferendis voluptatum itaque sapiente corporis tempore quisquam soluta ratione esse incidunt, cumque quas, aut consectetur pariatur voluptatibus nostrum alias consequuntur tempora?
+            Similique sequi nulla dicta, nesciunt pariatur quisquam ipsam consequuntur excepturi debitis tempore illo voluptatibus nemo iure iste, facere mollitia. Similique, vero autem. Ducimus sint magnam, a explicabo quisquam inventore quod!
+            Corrupti non nam esse odit doloremque amet optio atque. Sequi vero commodi temporibus distinctio similique laborum ut consequuntur adipisci. Repellat neque esse nesciunt rerum odio deleniti nam eius, soluta culpa.
+            Consequuntur harum aperiam, laboriosam soluta sunt tenetur reiciendis quisquam accusamus aliquam, itaque quas suscipit inventore ut earum exercitationem obcaecati aliquid non, voluptatum dolore rerum commodi similique quibusdam sit. Maiores, suscipit?
+            Quaerat perspiciatis, neque illum, assumenda perferendis quam repellendus commodi ex ipsam enim quo porro quae fuga doloremque voluptate est eveniet in voluptatibus consectetur sunt libero reiciendis. Nisi, esse. Facilis, corrupti?
+        </article>
+        <aside class="banner">
+            area de pulblicidade
+        </aside>
+        <footer>
+            <p class="roda">Rodapé</p>
+        </footer>
+    </div>
+</body>
+</html>
