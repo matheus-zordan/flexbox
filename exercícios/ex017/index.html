@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Blog</title>
+    <style type="text/css" media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'roboto', sans-serif;
+            font-weight: 300;
+            color: #444;
+        }
+
+        #content {
+            padding: 1rem;
+        }
+
+        .post {
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid #ccc;
+            padding: .7rem;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .post-title {
+            font-size: 1.5rem;
+            margin-bottom: .7rem;
+            font-weight: 400;
+        }
+
+        .post-title a {
+            text-decoration: none;
+            color: darkblue;
+        }
+
+        .post-title a:hover,
+        .entry-meta a:hover {
+            text-decoration: underline;
+        }
+
+        .entry-meta {
+            font-size: .8rem;
+            padding: .3rem 0 .7rem 0;
+        }
+
+        .entry-meta a {
+            text-decoration: none;
+            font-weight: 600;
+            color: blue;
+        }
+
+        .post-img {
+            display: block;
+            margin-bottom: .7rem;
+        }
+
+        .entry-content {
+            line-height: 1.5rem;
+        }
+
+        .more-link {
+            font-weight: 400;
+            color: darkblue;
+            padding-left: .3rem;
+            text-decoration: none;
+        }
+        .more-link:hover{
+            text-decoration: underline;
+        }
+        @media screen and (min-width:768px) {
+            #content{
+                width: 75%;
+            }
+            .post{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .entry-header, .entry-meta{
+                flex-basis: 100%;
+            }
+            .post-imagem{
+                flex-basis:40%
+            }
+            .entry-content{
+                flex-basis: 60%;
+                padding-left: 3rem;
+                text-align: justify;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content">
+        <article class="post">
+            <header class="entry-header">
+                <h2 class="post-title">
+                    <a href="#">Por onde eu começo a aprender a criar sites?</a>
+                </h2>
+            </header>
+            <div class="entry-meta">
+                <span class="by-author">
+                    Por <a href="#" rel="author">Matheus Zordan</a>
+                </span>
+                <span class="date">06 de Dezembro de 2023</span>
+            </div>
+            <a href="#" class="post-imagem">
+                <img class="post-img" src="/exercícios/ex017/imagens/1.jpeg" alt="">
+            </a>
+            <p class="entry-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti officiis impedit voluptatibus
+                necessitatibus, delectus esse natus, unde nesciunt et cum suscipit? Odio saepe totam alias
+                exercitationem obcaecati nihil quidem?
+                In, cumque? At repellendus maxime beatae voluptas iusto id dignissimos asperiores nisi voluptatem
+                facilis? Similique, aperiam ea iure placeat, reprehenderit culpa sequi repellat sunt ipsam earum
+                dignissimos obcaecati voluptates nemo.
+                Labore dolorum id saepe vero maxime necessitatibus aperiam optio molestias nulla in delectus minus,
+                iusto eum impedit voluptates similique fugit laborum? Voluptates adipisci labore soluta aspernatur
+                possimus atque unde in.
+                Asperiores odit deleniti nemo perspiciatis cupiditate, obcaecati consequuntur pariatur possimus ducimus
+                veniam, in adipisci, dignissimos maiores. Magnam amet debitis eligendi, doloribus aliquid eum sit natus
+                suscipit harum distinctio quos corrupti! <a href="#" class="more-link">Leia Mais</a>
+            </p>
+        </article>
+
+        <article class="post">
+            <header class="entry-header">
+                <h2 class="post-title">
+                    <a href="#">Por onde eu começo a aprender a criar sites?</a>
+                </h2>
+            </header>
+            <div class="entry-meta">
+                <span class="by-author">
+                    Por <a href="#" rel="author">Matheus Zordan</a>
+                </span>
+                <span class="date">06 de Dezembro de 2023</span>
+            </div>
+            <a href="#" class="post-imagem">
+                <img src="/exercícios/ex017/imagens/2.jpeg" alt="">
+            </a>
+            <p class="entry-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti officiis impedit voluptatibus
+                necessitatibus, delectus esse natus, unde nesciunt et cum suscipit? Odio saepe totam alias
+                exercitationem obcaecati nihil quidem?
+                In, cumque? At repellendus maxime beatae voluptas iusto id dignissimos asperiores nisi voluptatem
+                facilis? Similique, aperiam ea iure placeat, reprehenderit culpa sequi repellat sunt ipsam earum
+                dignissimos obcaecati voluptates nemo.
+                Labore dolorum id saepe vero maxime necessitatibus aperiam optio molestias nulla in delectus minus,
+                iusto eum impedit voluptates similique fugit laborum? Voluptates adipisci labore soluta aspernatur
+                possimus atque unde in.
+                Asperiores odit deleniti nemo perspiciatis cupiditate, obcaecati consequuntur pariatur possimus ducimus
+                veniam, in adipisci, dignissimos maiores. Magnam amet debitis eligendi, doloribus aliquid eum sit natus
+                suscipit harum distinctio quos corrupti! <a href="#" class="more-link">Leia Mais</a>
+            </p>
+        </article>
+
+        <article class="post">
+            <header class="entry-header">
+                <h2 class="post-title">
+                    <a href="#">Por onde eu começo a aprender a criar sites?</a>
+                </h2>
+            </header>
+            <div class="entry-meta">
+                <span class="by-author">
+                    Por <a href="#" rel="author">Matheus Zordan</a>
+                </span>
+                <span class="date">06 de Dezembro de 2023</span>
+            </div>
+            <a href="#" class="post-imagem">
+                <img src="/exercícios/ex017/imagens/3.jpeg" alt="">
+            </a>
+            <p class="entry-content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo corrupti officiis impedit voluptatibus
+                necessitatibus, delectus esse natus, unde nesciunt et cum suscipit? Odio saepe totam alias
+                exercitationem obcaecati nihil quidem?
+                In, cumque? At repellendus maxime beatae voluptas iusto id dignissimos asperiores nisi voluptatem
+                facilis? Similique, aperiam ea iure placeat, reprehenderit culpa sequi repellat sunt ipsam earum
+                dignissimos obcaecati voluptates nemo.
+                Labore dolorum id saepe vero maxime necessitatibus aperiam optio molestias nulla in delectus minus,
+                iusto eum impedit voluptates similique fugit laborum? Voluptates adipisci labore soluta aspernatur
+                possimus atque unde in.
+                Asperiores odit deleniti nemo perspiciatis cupiditate, obcaecati consequuntur pariatur possimus ducimus
+                veniam, in adipisci, dignissimos maiores. Magnam amet debitis eligendi, doloribus aliquid eum sit natus
+                suscipit harum distinctio quos corrupti! <a href="#" class="more-link">Leia Mais</a>
+            </p>
+        </article>
+    </div>
+</body>
+
+</html>
